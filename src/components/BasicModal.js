@@ -104,13 +104,13 @@ export default function BasicModal({ item, setItem, query }) {
               {({ values, errors, handleSubmit, touched, resetForm }) => {
                 return (
                   <Form onSubmit={handleSubmit}>
-                    <div className="relative mt-[46px] w-full h-[56px] pl-[16px] bg-[#F1F4F6] rounded flex items-center justify-between">
+                    <div className="relative mt-[46px] w-full h-[56px] px-[16px] bg-[#F1F4F6] rounded flex items-center justify-between">
                       <Field
                         id="name"
                         name="name"
                         type="input"
                         placeholder="Add Title"
-                        className="bg-[#F1F4F6] text-sm font-normal placeholder:text-base placeholder:text-[#252525] focus:outline-none"
+                        className="bg-[#F1F4F6] w-full text-sm font-normal placeholder:text-base placeholder:text-[#252525] focus:outline-none"
                       />
                       {errors?.name && (
                         <div className="text-[red] text-sm absolute -bottom-5 left-2">
